@@ -1,4 +1,4 @@
-FROM nice/ld-docker-app
+FROM nice/ld-docker-build
 MAINTAINER Ryan Roberts <ryansroberts@gmail.com>
 
 RUN ["npm","install -g grunt"]
