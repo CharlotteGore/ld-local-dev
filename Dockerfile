@@ -9,3 +9,4 @@ ENV PROJECT_DIR="/tmp"
 ENV MIMIR_PORT=80
 
 EXPOSE  80
+CMD ["grunt", "--gruntfile /owldin/Gruntfile.js"]
