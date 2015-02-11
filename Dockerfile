@@ -7,4 +7,4 @@ ENV PROJECT_DIR="/tmp"
 ENV MIMIR_PORT=80
 
 EXPOSE  80
-CMD ["cd /src/owldin && npm install && grunt"]
+CMD ["/bin/bash","/src/owldin/install.sh"]
