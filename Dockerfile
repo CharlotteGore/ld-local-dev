@@ -1,4 +1,4 @@
-FROM nice/ld-docker-build
+FROM nice/ld-docker-app
 MAINTAINER Charlotte Gore <conspiracygore@gmail.com>
 
 RUN ["npm","install -g grunt-cli"]
