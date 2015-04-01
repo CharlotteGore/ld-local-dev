@@ -2,8 +2,7 @@ FROM nice/ld-docker-app
 MAINTAINER Charlotte Gore <conspiracygore@gmail.com>
 
 RUN \
-   apt-get install -y nodejs &&\
-   ln /usr/bin/nodejs /usr/bin/node &&\
+   apt-get install npm &&\
    npm install -g grunt-cli &&\
    apt-get install -q -y git raptor-utils graphviz && \
    mozroots --import --sync && \
