@@ -1,7 +1,14 @@
 FROM nice/ld-docker-build
-MAINTAINER Ryan Roberts <ryansroberts@gmail.com>
+MAINTAINER Charlotte Gore <conspiracygore@gmail.com>
 
 RUN ["npm","install -g grunt-cli"]
+
+RUN \
+   apt-get install -q -y git raptor-utils graphviz && \
+   mozroots --import --sync && \
+   cd /tools && \
+   ./install.sh && \
+   cd -
 
 ENV PROJECT_DIR="/tmp"
 ENV MIMIR_PORT=80
