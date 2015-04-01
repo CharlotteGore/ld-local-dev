@@ -1,8 +1,6 @@
 FROM nice/ld-docker-app
 MAINTAINER Charlotte Gore <conspiracygore@gmail.com>
 
-RUN ["npm","install -g grunt-cli"]
-
 RUN \
    apt-get install -y nodejs &&\
    ln /usr/bin/nodejs /usr/bin/node &&\
