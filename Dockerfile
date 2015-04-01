@@ -2,7 +2,7 @@ FROM nice/ld-docker-app
 MAINTAINER Charlotte Gore <conspiracygore@gmail.com>
 
 RUN \
-   apt-get install npm &&\
+   apt-get -q -y install npm &&\
    npm install -g grunt-cli &&\
    apt-get install -q -y git raptor-utils graphviz && \
    mozroots --import --sync && \
