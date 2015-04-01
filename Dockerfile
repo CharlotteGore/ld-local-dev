@@ -4,6 +4,9 @@ MAINTAINER Charlotte Gore <conspiracygore@gmail.com>
 RUN ["npm","install -g grunt-cli"]
 
 RUN \
+   apt-get install -y nodejs &&\
+   ln /usr/bin/nodejs /usr/bin/node &&\
+   npm install -g grunt-cli &&\
    apt-get install -q -y git raptor-utils graphviz && \
    mozroots --import --sync && \
    cd /tools && \
