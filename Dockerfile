@@ -1,6 +1,8 @@
 FROM nice/ld-docker-app
 MAINTAINER Charlotte Gore <conspiracygore@gmail.com>
 
+ADD tools/ /tools/
+
 RUN \
    apt-get -q -y install npm &&\
    npm install -g grunt-cli &&\
